@@ -30,4 +30,22 @@ body {
 }
 #value{
     margin: 20px;
+    margin-top: 0;
+}
+#amount{
+    height: 36px;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding-left: 15px;
+}
+button{
+    padding: 12px;
+    border: none;
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
 }
