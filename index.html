@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b6b07ba501.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Currency Converter</title>
 </head>
 <body>
     <div class="header-section">
         <h1 id="converter-header">USD to CANADIAN Dollar</h1>
-        <p>Convert USD to CAD at the real exchange rate.</p>
+        <p id="converter-paragraph">Convert USD to CAD at the real exchange rate.</p>
     </div>
     <div class="converter-container">
-        <div class="input-box">
-            <img src="usd-flag.png" alt="USD Flag">
-            <label for="currencyType">USD</label>
-            <input type="number" id="amount" placeholder="Enter Amount">
+
+        <div id="inputSection">
+            <div id="type">
+                <label for="currencyType">Select Currency:</label>
+                <select id="currencyType">
+                    <option value="usdToCad">USD to CAD</option>
+                    <option value="cadToUsd">CAD to USD</option>
+                </select>
+            </div>
+            <div id="value">
+                <input type="number" id="amount" placeholder="Enter Amount">
+                <button onclick="convertCurrency('usdToCad')">Convert</button>
+            </div>
         </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-flag-usa" style="color: #397ff9;"></i>
+            <label for="currencyType">USD</label>
+        </div>
+
         <div class="output-box">
-            <img src="cad-flag.png" alt="CAD Flag">
+            <i class="fa-brands fa-canadian-maple-leaf" style="color: #fb1818;"></i>
             <label for="result">CAD</label>
             <p id="result"></p>
         </div>
-        <button onclick="convertCurrency('usdToCad')">Convert</button>
-        <button onclick="convertCurrency('cadToUsd')">Convert</button>
     </div>
     <script src="script.js"></script>
 </body>
