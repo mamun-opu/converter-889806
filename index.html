@@ -10,11 +10,18 @@
     <h1>convert US dollar to Canadian dollar</h1>
     <h3>Convert USD to CAD at the real exchange rate</h3>
 
-    <label for="usdInput">Enter USD:</label>
-    <input type="number" id="usdInput" placeholder="Enter USD">
-    <button onclick="convertCurrency()">Convert</button>
-    <p id="result"></p>
-
+    <div class="converter-container">
+        <h1>Currency Converter</h1>
+        <label for="currencyType">Select Currency:</label>
+        <select id="currencyType">
+            <option value="usdToCad">USD to CAD</option>
+            <option value="cadToUsd">CAD to USD</option>
+        </select>
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
