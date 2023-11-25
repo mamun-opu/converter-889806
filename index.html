@@ -28,17 +28,19 @@
                 <button onclick="convertCurrency('usdToCad')">Convert</button>
             </div>
         </div>
-
-        <div class="input-box">
-            <i class="fa-solid fa-flag-usa" style="color: #397ff9;"></i>
-            <label for="currencyType">USD</label>
+        <div id="country">
+            <div class="output-box">
+                <i class="fa-solid fa-flag-usa" style="color: #397ff9;"></i>
+                <label for="currencyType">USD</label>
+            </div>
+    
+            <div class="output-box">
+                <i class="fa-brands fa-canadian-maple-leaf" style="color: #fb1818;"></i>
+                <label for="result">CAD</label>
+                <p id="result"></p>
+            </div>
         </div>
-
-        <div class="output-box">
-            <i class="fa-brands fa-canadian-maple-leaf" style="color: #fb1818;"></i>
-            <label for="result">CAD</label>
-            <p id="result"></p>
-        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
