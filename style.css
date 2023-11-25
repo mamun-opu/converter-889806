@@ -2,9 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #f4f4f4;
 }
 
@@ -19,6 +16,7 @@ body {
 #inputSection{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #currencyType{
     height: 36px;
@@ -48,4 +46,21 @@ button{
     font-weight: 600;
     font-size: large;
     cursor: pointer;
+}
+#country{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+.output-box{
+    background-color: #fff;
+    padding: 30px 20px 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+}
+.output-box i{
+    margin-top: 16px;
 }
