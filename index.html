@@ -25,19 +25,20 @@
             </div>
             <div id="value">
                 <input type="number" id="amount" placeholder="Enter Amount">
-                <button onclick="convertCurrency('usdToCad')">Convert</button>
+                <button onclick="convertCurrency()">Convert</button>
             </div>
         </div>
         <div id="country">
             <div class="output-box">
-                <i class="fa-solid fa-flag-usa" style="color: #397ff9;"></i>
-                <label for="currencyType">USD</label>
+                <i class="fa-solid fa-flag-usa" style="color: #397ff9; margin-right: 5px;"></i>
+                <p>USD - $</p>
+                <p id="usdResult"></p>
             </div>
     
             <div class="output-box">
-                <i class="fa-brands fa-canadian-maple-leaf" style="color: #fb1818;"></i>
-                <label for="result">CAD</label>
-                <p id="result"></p>
+                <i class="fa-brands fa-canadian-maple-leaf" style="color: #fb1818; margin-right: 5px;"></i>
+                <p>CAD - $</p>
+                <p id="CadResult"></p>
             </div>
         </div>
         
